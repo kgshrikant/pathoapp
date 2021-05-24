@@ -1,0 +1,32 @@
+#header-name{
+  font: 60px bold Copperplate; color: #400e78;
+  text-shadow: 2px 2px 5px #7f9fd4, 0 0 5px #b2b4b8;
+}
+#punch-line{
+  font-family: 'Brush Script MT', cursive;
+  font-style: normal;
+  font-weight:800;
+  color: red;
+  font-size: 20px;
+  text-align: right;
+  margin-right: 200px;
+}
+#address{
+  font-size:24px;
+  color:red;
+  padding:3px
+}
+#phone{
+   style="padding:3px;
+   font-size:24px;
+   color:blue;"
+}
+#heartbeat{
+  color:red;
+  size: 40px;
+}
+#plus-circle{
+  color:red;
+  size: 30px;
+  
+}
