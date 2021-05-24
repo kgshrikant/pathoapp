@@ -1,0 +1,32 @@
+<?php
+$db_hostname='localhost';
+$db_database='pathodb';
+$db_username='root';
+$db_password='';
+
+$conn = mysqli_connect($db_hostname, $db_username,$db_password, $db_database);
+
+// Check connection
+if($conn === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+
+//Create variables
+$firstname = $_POST['firstname'];
+$surname = $_POST['surname'];
+$age = $_POST['age'];
+$sex = $_POST['sex'];
+$initials = $_POST['initials'];
+
+$sql = "INSERT INTO patient (initials, firstname, surname, age, sex)
+VALUES ('$initials','$firstname','$surname','$age', '$sex')";
+
+if (mysqli_query($conn, $sql)) {
+	echo $conn->insert_id;
+}
+else {
+	echo 0;
+}
+
+mysqli_close($conn);
+?>
